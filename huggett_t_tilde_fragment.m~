@@ -60,7 +60,7 @@ while abs(aggsav) >= 0.01 ;
           MuNew = zeros(size(Mu));
           for ii = 1:length(emp_ind)
               apr_ind = pol_indx(emp_ind(ii), a_ind(ii)); % which a prime does the policy fn prescribe?
-              MuNew(:, apr_ind) = MuNew(:, apr_ind) + PI(emp_ind(ii), :)'.*Mu(:,a_ind(ii))*mass(ii)% which mass of households goes to which exogenous state?
+              MuNew(:, apr_ind) = MuNew(:, apr_ind) + PI(emp_ind(ii), :)'.*Mu(:,apr_ind)% which mass of households goes to which exogenous state?
           end
           dif=max(abs(MuNew-Mu))
           Mu=MuNew
