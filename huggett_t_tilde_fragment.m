@@ -69,13 +69,25 @@ while abs(aggsav) >= 0.01 ;
     else
        q_max=q_guess;
     end
-    q_max
     q_min
+    q_max
 end
+subplot(2,1,1)
+plot(a,v_guess)
+legend('Employeed','Unemployeed','location','northwest')
+title(['Value Function'])
+subplot(2,1,2)
+plot(a,pol_fn)
+legend('Employeed','Unemployeed','location','northwest')
+title(['Policy Function'])
 Mu=Mu';
 pop=[Mu(:,1);Mu(:,2)];
 wealth=[a'+y_s(1);a'+y_s(2)];
 earning=[repmat(y_s(1),num_a,1);repmat(y_s(2),num_a,1)];
 wealth(wealth<0)=0;
+subplot(1,2,1)
 c_w=gini(pop, wealth,true);
+title(['Wealth, gini=',num2str(c_w)])
+subplot(1,2,2)
 c_E=gini(pop, earning,true);
+title(['Earning, gini=',num2str(c_E)])

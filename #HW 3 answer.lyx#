@@ -147,7 +147,6 @@ Where state variables are
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
@@ -155,7 +154,7 @@ status collapsed
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Plot.jpg
-	scale 20
+	scale 30
 
 \end_inset
 
@@ -163,7 +162,6 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -199,15 +197,14 @@ Value function and Policy function
 
 \begin_layout Standard
 \begin_inset Float figure
-placement H
 wide false
 sideways false
 status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Lorenz.jpg
-	scale 20
+	filename Lorenz Curve.jpg
+	scale 30
 
 \end_inset
 
@@ -215,7 +212,6 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\align center
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
