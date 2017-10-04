@@ -91,3 +91,16 @@ title(['Wealth, gini=',num2str(c_w)])
 subplot(1,2,2)
 c_E=gini(pop, earning,true);
 title(['Earning, gini=',num2str(c_E)])
+x=PI(2,1)/(1-PI(1,1)+PI(2,1));
+Y=x*y_s(1)+(1-x)*y_s(2);
+W=[Y^(1-sigma)/(1-sigma)]/(1-beta);
+w=repmat(W,2,num_a);
+A=(w./v_guess)';
+u=sum(Mu(A<1));
+W=[Y^(1-sigma)/(1-sigma)]/(1-beta);
+w=repmat(W,2,num_a);
+lambda=(w./v_guess).^(1/(1-sigma))-1;
+plot(a,lambda')
+legend('Employeed','Unemployeed','location','northwest')
+title(['consumption equivalent'])
+sum(sum(lambda.*Mu'))

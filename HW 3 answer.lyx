@@ -74,6 +74,10 @@
 ECON 634 Homework 3
 \end_layout
 
+\begin_layout Author
+Ruohao Zhang
+\end_layout
+
 \begin_layout Standard
 1.
  The maximization question can be described by:
@@ -150,11 +154,11 @@ Where state variables are
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Plot.jpg
+	filename Value and Policy Plot.jpg
 	scale 20
 
 \end_inset
@@ -234,6 +238,144 @@ Lorenz curve
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\end_layout
+
+\begin_layout Standard
+(1).
+ In that case, assume all consumers started at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ without any state, and will randomly get employment state in 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+ Households want to solve the following problem:
+\begin_inset Formula 
+\begin{align*}
+\underset{c_{t},a_{t}}{Max\;}\stackrel[t=0]{\infty}{\sum}\underset{s^{t}\in S^{t}}{\sum}\beta^{t}\pi_{t}(s^{t})\frac{c_{t}(s^{t})^{1-\sigma}}{1-\sigma}\\
+st.\:c_{t}(s^{t})+\underset{s_{t+1}\in S}{\sum}q_{t+1}(s_{t+1},\,s^{t})a_{t+1}(s_{t+1},\,s^{t})=y(s_{t})+a_{t}(s^{t}) & \quad\forall t,\,s^{t},\,i.
+\end{align*}
+
+\end_inset
+
+ By solving this problem, we get 
+\begin_inset Formula 
+\[
+q_{t+1}(s_{t+1},\,s^{t}|\,s_{0})=\beta^{t+1}\pi(s_{t+1},\,s^{t}|\,s_{0})\left[\frac{c_{0}(s_{0})}{c_{t+1}(s_{t+1},\,s^{t},\,s_{0})}\right]^{\sigma}\quad\forall t,\,s^{t},\,i.
+\]
+
+\end_inset
+
+ Under market clear condition, 
+\begin_inset Formula $c_{t}^{1}(s^{t})+c_{t}^{2}(s^{t})=Pr(s=e)\times y(s=e)+Pr(s=u)\times y(s=u)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The households will choose the consumption to make marginal utility same
+ for each period.
+ Indeed, the allocation will be 
+\begin_inset Formula $c_{t}(s^{t})=\hat{c}$
+\end_inset
+
+ for all periods and states.
+ The stationary distribution of employment keeps on 
+\begin_inset Formula $\left(\begin{array}{cc}
+0.9434 & 0.0566\end{array}\right)$
+\end_inset
+
+, so the total endowment in the society is 
+\begin_inset Formula $Y=\pi_{e}\cdot y(e)+\pi_{u}\cdot y(u)=0.9717$
+\end_inset
+
+.
+ Due to market clear condition, 
+\begin_inset Formula $c_{t}(s^{t})=\hat{c}=Y=0.9717$
+\end_inset
+
+.
+ The expected utility will be
+\begin_inset Formula 
+\[
+W^{FB}=\stackrel[t=0]{\infty}{\sum}\beta^{t}U\left(\hat{c}\right)=\frac{\hat{c}^{1-\sigma}}{1-\sigma}\cdot\frac{1}{1-\beta}=-298.3702
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(2).
+ Since we have 
+\begin_inset Formula $W^{FB}=-298.3702$
+\end_inset
+
+, By comparing 
+\begin_inset Formula $W^{FB}$
+\end_inset
+
+ with value function, the portion of population who are better off is 
+\begin_inset Formula $0.5190$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(3).
+ The consumption equivalent plot w.r.t asset is shown in the following graph.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename consumption equivalent.jpg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Consumption equivalent 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and the economy-wide welfare gain is 
+\begin_inset Formula $0.12\%$
+\end_inset
+
+.
+ 
 \end_layout
 
 \end_body
