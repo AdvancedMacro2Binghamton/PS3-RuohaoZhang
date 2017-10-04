@@ -69,9 +69,8 @@ while abs(aggsav) >= 0.01 ;
     else
        q_max=q_guess;
     end
-    q_min
-    q_max
 end
+figure(1)
 subplot(2,1,1)
 plot(a,v_guess)
 legend('Employeed','Unemployeed','location','northwest')
@@ -85,6 +84,7 @@ pop=[Mu(:,1);Mu(:,2)];
 wealth=[a'+y_s(1);a'+y_s(2)];
 earning=[repmat(y_s(1),num_a,1);repmat(y_s(2),num_a,1)];
 wealth(wealth<0)=0;
+figure(2)
 subplot(1,2,1)
 c_w=gini(pop, wealth,true);
 title(['Wealth, gini=',num2str(c_w)])
@@ -100,6 +100,7 @@ u=sum(Mu(A<1));
 W=[Y^(1-sigma)/(1-sigma)]/(1-beta);
 w=repmat(W,2,num_a);
 lambda=(w./v_guess).^(1/(1-sigma))-1;
+figure(3)
 plot(a,lambda')
 legend('Employeed','Unemployeed','location','northwest')
 title(['consumption equivalent'])
