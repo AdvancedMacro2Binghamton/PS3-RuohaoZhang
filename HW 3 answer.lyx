@@ -1,0 +1,382 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+ECON 634 Homework 3
+\end_layout
+
+\begin_layout Author
+Ruohao Zhang
+\end_layout
+
+\begin_layout Standard
+1.
+ The maximization question can be described by:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\underset{c_{t},a_{t}}{Max\;}E_{0}\left(\stackrel[t=0]{\infty}{\sum}\beta^{t}U(c_{t})\right)\\
+st.\:c_{t}+q_{t}a_{t+1}=y(s_{t})+a_{t} & \quad\forall t,\,s_{t}.
+\end{align*}
+
+\end_inset
+
+The value function will become:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V(a_{t},\,s_{t})=\underset{a_{t+1}\in\varGamma(a_{t},\,s_{t})}{Max}\;U(y(s_{t})+a_{t}-q_{t}a_{t+1})+\beta E\left[V(a_{t+1},\,s_{t+1})\right]
+\]
+
+\end_inset
+
+Where state variables are 
+\begin_inset Formula $a_{t}$
+\end_inset
+
+ and 
+\begin_inset Formula $s_{t}$
+\end_inset
+
+, control variable is 
+\begin_inset Formula $a_{t+1}$
+\end_inset
+
+.
+ State space is 
+\begin_inset Formula $a_{t}\in[-2,\,5]$
+\end_inset
+
+, 
+\begin_inset Formula $s_{t}\in\left\{ e,\,u\right\} $
+\end_inset
+
+.
+ Constraint correspondence is 
+\begin_inset Formula $a_{t+1}\in\left[-2,\,min\left(5,\,\frac{y(s_{t})+a_{t}}{q_{t}}\right)\right]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $q=0.9943$
+\end_inset
+
+ satisfies the market clear condition.
+ Risk free interest rate is 
+\begin_inset Formula $5.7\%$
+\end_inset
+
+.
+ Given that interest rate, the value function and policy function is shown
+ in the following graph.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Value and Policy Plot.jpg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Value function and Policy function
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ The wealth Gini coefficient is 
+\begin_inset Formula $0.3359$
+\end_inset
+
+ and the earning Gini coefficient is 
+\begin_inset Formula $0.0275$
+\end_inset
+
+.Figure 2 gives Lorenz curve for both wealth and earning.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Lorenz.jpg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Lorenz curve
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\end_layout
+
+\begin_layout Standard
+(1).
+ In that case, assume all consumers started at 
+\begin_inset Formula $t=0$
+\end_inset
+
+ without any state, and will randomly get employment state in 
+\begin_inset Formula $t=1$
+\end_inset
+
+.
+ Households want to solve the following problem:
+\begin_inset Formula 
+\begin{align*}
+\underset{c_{t},a_{t}}{Max\;}\stackrel[t=0]{\infty}{\sum}\underset{s^{t}\in S^{t}}{\sum}\beta^{t}\pi_{t}(s^{t})\frac{c_{t}(s^{t})^{1-\sigma}}{1-\sigma}\\
+st.\:c_{t}(s^{t})+\underset{s_{t+1}\in S}{\sum}q_{t+1}(s_{t+1},\,s^{t})a_{t+1}(s_{t+1},\,s^{t})=y(s_{t})+a_{t}(s^{t}) & \quad\forall t,\,s^{t},\,i.
+\end{align*}
+
+\end_inset
+
+ By solving this problem, we get 
+\begin_inset Formula 
+\[
+q_{t+1}(s_{t+1},\,s^{t}|\,s_{0})=\beta^{t+1}\pi(s_{t+1},\,s^{t}|\,s_{0})\left[\frac{c_{0}(s_{0})}{c_{t+1}(s_{t+1},\,s^{t},\,s_{0})}\right]^{\sigma}\quad\forall t,\,s^{t},\,i.
+\]
+
+\end_inset
+
+ Under market clear condition, 
+\begin_inset Formula $c_{t}^{1}(s^{t})+c_{t}^{2}(s^{t})=Pr(s=e)\times y(s=e)+Pr(s=u)\times y(s=u)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The households will choose the consumption to make marginal utility same
+ for each period.
+ Indeed, the allocation will be 
+\begin_inset Formula $c_{t}(s^{t})=\hat{c}$
+\end_inset
+
+ for all periods and states.
+ The stationary distribution of employment keeps on 
+\begin_inset Formula $\left(\begin{array}{cc}
+0.9434 & 0.0566\end{array}\right)$
+\end_inset
+
+, so the total endowment in the society is 
+\begin_inset Formula $Y=\pi_{e}\cdot y(e)+\pi_{u}\cdot y(u)=0.9717$
+\end_inset
+
+.
+ Due to market clear condition, 
+\begin_inset Formula $c_{t}(s^{t})=\hat{c}=Y=0.9717$
+\end_inset
+
+.
+ The expected utility will be
+\begin_inset Formula 
+\[
+W^{FB}=\stackrel[t=0]{\infty}{\sum}\beta^{t}U\left(\hat{c}\right)=\frac{\hat{c}^{1-\sigma}}{1-\sigma}\cdot\frac{1}{1-\beta}=-298.3702
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+(2).
+ Since we have 
+\begin_inset Formula $W^{FB}=-298.3702$
+\end_inset
+
+, By comparing 
+\begin_inset Formula $W^{FB}$
+\end_inset
+
+ with value function, the portion of population who are better off is 
+\begin_inset Formula $0.5190$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+(3).
+ The consumption equivalent plot w.r.t asset is shown in the following graph.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename consumption equivalent.jpg
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Consumption equivalent 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ and the economy-wide welfare gain is 
+\begin_inset Formula $0.12\%$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document
